@@ -6,13 +6,18 @@
 #include "Communication/communication.hpp"
 #include "Utilities/Console/console.hpp"
 
+#include "Utilities/Lua/lua.h"
+
 #include "Common/functions.hpp"
 #include "Common/addresses.h"
 
-#include "Utilities/Lua/lua.h"
+#include "Utilities/anya-hook/anya_hook.hpp"
+
+#include "hooks.hpp"
 
 void main() {
     console::open_console();
+    hooks::initiate_hooks();
 
     std::cout << "Hi" << std::endl;
 
