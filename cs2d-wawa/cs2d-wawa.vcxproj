@@ -133,11 +133,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="Utilities\anya-hook\anya_hook.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common\addresses.h" />
     <ClInclude Include="Common\functions.hpp" />
     <ClInclude Include="Communication\communication.hpp" />
+    <ClInclude Include="hooks.hpp" />
+    <ClInclude Include="Utilities\anya-hook\anya_hook.hpp" />
+    <ClInclude Include="Utilities\anya-hook\hde32_disasm.hpp" />
     <ClInclude Include="Utilities\Console\console.hpp" />
     <ClInclude Include="Utilities\Lua\lua.h" />
   </ItemGroup>
